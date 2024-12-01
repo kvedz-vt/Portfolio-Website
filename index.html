@@ -28,6 +28,48 @@
         <div class="home-content">
             <h1>Hi, I'm <span>Kevin</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
+            <script>
+                // Typing effect logic
+                const typedTextSpan = document.querySelector(".typing-text span");
+                const words = ["Apprentice Mechanic", "Developer", "Game Designer", "Professional Gamer", "3D Modeler"];
+                let wordIndex = 0;
+                let charIndex = 0;
+                let isDeleting = false;
+        
+                function typeEffect() {
+                    const currentWord = words[wordIndex];
+        
+                    if (isDeleting) {
+                        // Deleting characters
+                        typedTextSpan.textContent = currentWord.substring(0, charIndex--);
+                    } else {
+                        // Adding characters
+                        typedTextSpan.textContent = currentWord.substring(0, charIndex++);
+                    }
+        
+                    // When the word is completely typed
+                    if (!isDeleting && charIndex === currentWord.length) {
+                        isDeleting = true;
+                        setTimeout(typeEffect, 1000); // Pause before deleting
+                        return;
+                    }
+        
+                    // When the word is completely deleted
+                    if (isDeleting && charIndex === 0) {
+                        isDeleting = false;
+                        wordIndex = (wordIndex + 1) % words.length; // Move to the next word
+                    }
+        
+                    // Adjust typing and deleting speed
+                    const typingSpeed = isDeleting ? 100 : 200;
+                    setTimeout(typeEffect, typingSpeed);
+                }
+        
+                // Start typing effect
+                document.addEventListener("DOMContentLoaded", () => {
+                    typeEffect();
+                });
+            </script>
             <p>
                 I'm a developer with a passion for tactical games and backend systems. Whether it's creating game mechanics or building the things that keep everything running smoothly, I love combining strategy and tech to create seamless experiences.
             </p>
