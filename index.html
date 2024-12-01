@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Kevin</a>
+
+        <nav>
+            <a href="#home" class="active"> Home</a>
+            <a href="#skills" >Skills</a>
+            <a href="#education" >Education</a>
+            <a href="#projects" >Projects</a>
+            <a href="#contact" >Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-img">
+            <img src="main.jpeg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Kevin</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>
+                I'm a developer with a passion for tactical games and backend systems. Whether it's creating game mechanics or building the things that keep everything running smoothly, I love combining strategy and tech to create seamless experiences.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kevinncaldwell/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/kvedz-vt" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://x.com/KevinCaldw7376" target="_blank">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/itzkevin.nguyen/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=caldwellkevin45@gmail.com&su=Job%20Inquiry&body=Hello%20Kevin," target="_blank" class="btn">Hire me</a>
+                <a href="https://www.dropbox.com/scl/fi/i1v2puzjheyy2f6s0hdoy/Kevin-Caldwell-Resume.pdf?rlkey=j2ny0gb48zrj27p9x8qxvrr8q&st=d304ad9d&dl=1" download class="btn">Get CV</a>
+            </div>
+    </section>
+    <section id="skills" class="skills">
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-content">
+            <!-- Frontend Skills -->
+            <div class="skill-category">
+                <h3 class="skill-title">Frontend</h3>
+                <ul class="skill-list">
+                    <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                    <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                </ul>
+            </div>
+            <!-- Backend Skills -->
+            <div class="skill-category">
+                <h3 class="skill-title">Backend</h3>
+                <ul class="skill-list">
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fa-brands fa-microsoft"></i> C#</li>
+                    <li><i class="fa-solid fa-code"></i> Lua</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Other Skills -->
+        <div class="skills-other">
+            <div class="skill-category-wide">
+                <h3 class="skill-title">Other Skills</h3>
+                <ul class="skill-list">
+                    <li><i class="fa-solid fa-cloud"></i> Adobe Cloud</li>
+                    <li><i class="fa-solid fa-cubes"></i> C4D/Blender</li>
+                    <li><i class="fa-solid fa-file"></i> Office 365</li>
+                    <li><i class="fa-solid fa-wrench"></i> Automotive Technician</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <div class="section-title">
+            <h2>Education</h2>
+        </div>
+        <div class="education-content">
+            <!-- First School -->
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3>Computer Science</h3>
+                <p><strong>Queen's University</strong> | 2028</p>
+                <p>
+                    Focused on foundational and advanced topics in computer science, including programming, algorithms, data structures, databases, software development, and system design.
+                </p>
+            </div>
+            <!-- Second School -->
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fa-solid fa-school"></i>
+                </div>
+                <h3>Ontario Secondary School Diploma</h3>
+                <p><strong>Silverthorn Collegiate Institute</strong> | 2024</p>
+                <p>
+                    Graduated as an Ontario Scholar with Proficiency Awards, achieving a GPA of 4.0 on a 4.33 scale.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="project-container">
+            <div class="project-card">
+                <h3 class="project-title">AI Song Reccomendation App</h3>
+                <div class="image-zoom-container">
+                    <img src="image.png" alt="Song Recommendation AI" class="project-image" data-modal="true">
+                </div>
+                <p class="project-description">
+                    This app uses Spotify API, and Last.fm's API to receive audio features such as danceability, energy, loudness, etc., and machine learning to recommend similar songs. It combines Spotify's API, Last.fm's API, AI-driven analysis, and user preferences for personalized suggestions.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">...</section>
+</body>
+</html>
