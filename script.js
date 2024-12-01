@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const typedTextSpan = document.querySelector(".typing-text span");
 const words = ["Apprentice Mechanic", "Developer", "Game Designer", "Professional Gamer", "3D Modeler"];
 let wordIndex = 0;
@@ -146,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.classList.remove("visible");
         }
     });
-=======
+
 const typedTextSpan = document.querySelector(".typing-text span");
 const words = ["Apprentice Mechanic", "Developer", "Game Designer", "Professional Gamer", "3D Modeler"];
 let wordIndex = 0;
@@ -294,5 +293,5 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.classList.remove("visible");
         }
     });
->>>>>>> b755c2c8102c448203b69386128e7580177e9a10
+
 });
