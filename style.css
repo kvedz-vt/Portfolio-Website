@@ -574,7 +574,8 @@ span {
     to {
         transform: scale(1);
     }
-=======
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 * {
@@ -1150,5 +1151,4 @@ span {
     to {
         transform: scale(1);
     }
->>>>>>> b755c2c8102c448203b69386128e7580177e9a10
 }
